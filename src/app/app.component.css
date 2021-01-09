@@ -1,0 +1,36 @@
+.slides-category-container{
+  overflow-x: scroll;
+  
+}
+.slides-category-container div:last-child{
+  margin-right: 0px;
+}
+h2 {
+  color: #696969;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+  position: relative;
+  margin: 40px 0px 40px 0px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+h2::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  height: 1px;
+  border-radius: 1px;
+  background: #d4d4d4;
+  left: 0;
+  right: 0;
+  bottom: 14px;
+}
+h2 span {
+  display: inline-block;
+  padding: 0 25px;
+  background:#ebebeb;
+  position:relative;
+  z-index:2;
+}
