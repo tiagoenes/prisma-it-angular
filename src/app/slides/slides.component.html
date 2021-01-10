@@ -1,7 +1,12 @@
 <div class="card" style="width: 40rem;">
-  <img src="{{element.url}}" class="imgs card-img-top" alt="...">
-  <!-- <div class="card-body">
-    <div>{{element.title}}</div>
-    <div>{{calculateTime(element.duration)}}</div>
-  </div> -->
+  <div>
+    <img src="{{element.url}}" class="imgs card-img-top" alt="...">
+    <div class="title-card">{{element.title}}</div>
+  </div>
+    <div class="play-card text-center">
+      <div>
+        <fa-icon class="" [icon]="faPlay"></fa-icon>
+      </div>
+      <div>{{calculateTime(element.duration)}}</div>
+    </div>
 </div>

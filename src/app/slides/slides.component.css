@@ -1,8 +1,49 @@
 .card {
   border-radius: 20px;
   margin-right: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.card:hover{
+  cursor: pointer;
 }
 
 .imgs{
   border-radius: 20px;
+  filter: brightness(0.88);
+  transition: filter 0.6s;
+}
+.card:hover .imgs{
+  filter: brightness(0.4);
+}
+.title-card{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 45%;
+  color: white;
+  font-size: 1.75em;
+  font-weight: 700;
+  text-shadow: 0 0 #6d696b;
+  visibility: visible;
+}
+.card:hover .title-card{
+  visibility: hidden;
+}
+.play-card{
+  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 45%;
+  color: white;
+  font-size: 1.25em;
+  font-weight: 700;
+  text-shadow: 0 0 #6d696b;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 3% 6%;
+  min-width: 30%;
+}
+.card:hover .play-card{
+  visibility: visible;
 }

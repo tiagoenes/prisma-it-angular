@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import contentFile from './_files/content.json';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -8,6 +9,9 @@ import contentFile from './_files/content.json';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
+  faClock = faClock;
+
   checked=true;
   categories = contentFile;
   title = 'prisma-it-angular';
@@ -29,6 +33,15 @@ export class AppComponent implements OnInit {
     
     this.totalDuration[index]=count;
     return this.calculateTime(this.totalDuration[index]);
+  }
+  totalDurationChannel(){
+    let sum = 0;
+    this.categories.forEach(category => {
+      category.slides.forEach(element => {
+        sum+=element.duration;
+      });
+    });
+    return this.calculateTime(sum);
   }
   calculateTime(d){
     d = Number(d);

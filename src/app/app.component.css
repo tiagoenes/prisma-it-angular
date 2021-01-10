@@ -11,7 +11,7 @@ h2 {
   font-weight: 300;
   text-align: center;
   position: relative;
-  margin: 40px 0px 10px 0px;
+  margin: 40px 15px 10px 15px;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
 }
@@ -38,7 +38,7 @@ h2 span {
   padding: 62px 0 0 0;
 }
 .category-selection{
-  background-color: #e0e0e0;
+  background-color: #cccbcb;
 }
 .full-height{
   min-height: calc(100vh - 62px);
@@ -58,7 +58,64 @@ h2 span {
   margin-top: 43px;
   font-size: 1.5em;
   justify-content: center;
+  color: #777777;
+  margin-bottom: 35px;
 }
 .category-selection{
   padding-bottom: 20px ;
+}
+.category-selection .title-channels{
+  font-weight: 700;
+}
+.slides-category-container{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color:#e4e4e4;
+  border-radius: 10px;
+  
+}
+.lighter{
+  font-weight: 200;
+}
+.bolder{
+  font-weight: 500;
+}
+.color-grey{
+  color:#b3b2b2;
+}
+.text-purple{
+  color:#CC729F;
+}
+.duration,.channel-duration{
+  font-size: 1.5em;
+}
+.channel-duration{
+  margin: 20px 15px 20px 15px;
+}
+.general-btn{
+  border:0;
+  background: #CC729F;
+  padding: 12px 12px;
+  border-radius: 20px;
+  color: #777777;
+  font-size: 1em;
+  color:white;
+}
+.general-btn:hover{
+  background-color: #a1577c;
+  color:white;
+}
+.btns-channel-container{
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #d8d8d8;
+}
+.btns-all-channel{
+  margin-top: 20px;
+}
+/deep/.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: rgb(218 118 192 / 54%)!important;
+}
+/deep/.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+  background-color: #CC729F;
 }

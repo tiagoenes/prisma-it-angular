@@ -1,6 +1,10 @@
 .general-btn{
-  border: 1px solid #E483BB;
+  border: 1px solid #CC729F;
   padding: 8px 15px;
   border-radius: 20px;
   color: #777777;
+}
+.general-btn:hover{
+  background-color: #CC729F;
+  color:white;
 }

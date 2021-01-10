@@ -11,6 +11,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatMenuModule} from '@angular/material/menu';
 import { CategoryButtonsComponent } from './category-buttons/category-buttons.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CategoryButtonsComponent } from './category-buttons/category-buttons.co
     BrowserAnimationsModule,
     MatSliderModule,
     MatSlideToggleModule,
-    MatMenuModule
+    MatMenuModule,
+    FontAwesomeModule
     
   ],
   providers: [],
