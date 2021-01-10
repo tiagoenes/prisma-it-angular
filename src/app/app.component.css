@@ -88,7 +88,7 @@ h2 span {
   color:#CC729F;
 }
 .duration,.channel-duration{
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .channel-duration{
   margin: 20px 15px 20px 15px;
@@ -101,6 +101,7 @@ h2 span {
   color: #777777;
   font-size: 1em;
   color:white;
+  font-size: 1em;
 }
 .general-btn:hover{
   background-color: #a1577c;
