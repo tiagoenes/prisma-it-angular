@@ -54,8 +54,7 @@ export class AppComponent implements OnInit {
     var sDisplay = s > 0 ? s + (s == 1 ? " s" : " s") : "";
     return hDisplay + mDisplay + sDisplay; 
   }
-  test(cat){
-    console.log(this.arrayChecked[cat]);
+  isChecked(cat){
     this.arrayChecked[cat]=!this.arrayChecked[cat];
   }
 }

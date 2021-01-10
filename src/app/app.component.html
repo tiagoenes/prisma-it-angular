@@ -7,7 +7,7 @@
       <div *ngFor="let category of categories;index as i">
         <div class="text-center category-slider">
           <div>{{category.name.toUpperCase()}}</div>
-          <mat-slide-toggle [checked]="true" (click)="test(category.name)"></mat-slide-toggle>
+          <mat-slide-toggle [checked]="true" (click)="isChecked(category.name)"></mat-slide-toggle>
         </div>
       </div>
     </div>
@@ -16,9 +16,9 @@
     <div class="row">
       <div class="col-12 btns-channel-container">
         <div class="btns-all-channel d-flex justify-content-center">
-          <button type="button" class="general-btn mx-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="general-btn mx-3">
           PLAY THE ENTIRE CHANNEL
-          </button><button type="button" class="general-btn mx-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </button><button type="button" class="general-btn mx-3">
           ADD PLAYLIST TO THE CHANNEL
           </button>
         </div>
