@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent implements OnInit {
-  
+  // @Input element:{name:string};
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  clickSlider(category){
+    console.log("here"+category);
+  }
 }

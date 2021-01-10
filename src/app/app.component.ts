@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import contentFile from './_files/content.json';
 
 
@@ -7,22 +7,27 @@ import contentFile from './_files/content.json';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  checked=true;
   categories = contentFile;
   title = 'prisma-it-angular';
+  arrayChecked=[]
   totalDuration=[];
 
+  ngOnInit(): void {
+    this.categories.forEach(element => {
+      this.arrayChecked[element.name]=true;
+    });
+  }
   calculateTotDurarion(index){
     let count = 0;
     
       this.categories[index].slides.forEach(element => {
         
         count+=Number(element.duration);
-        console.log(count);
       });
     
     this.totalDuration[index]=count;
-    console.log(this.totalDuration[index]);
     return this.calculateTime(this.totalDuration[index]);
   }
   calculateTime(d){
@@ -35,5 +40,9 @@ export class AppComponent {
     var mDisplay = m > 0 ? m + (m == 1 ? " m " : " m") : "";
     var sDisplay = s > 0 ? s + (s == 1 ? " s" : " s") : "";
     return hDisplay + mDisplay + sDisplay; 
+  }
+  test(cat){
+    console.log(this.arrayChecked[cat]);
+    this.arrayChecked[cat]=!this.arrayChecked[cat];
   }
 }
